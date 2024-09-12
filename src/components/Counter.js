@@ -3,7 +3,9 @@ import { useSelector } from "react-redux";
 import classes from "./Counter.module.css";
 
 const Counter = () => {
-  const counter = useSelector(state => state.counter )
+  const counter = useSelector((state) => {
+    return state.counter;
+  });
   const toggleCounterHandler = () => {};
 
   return (
